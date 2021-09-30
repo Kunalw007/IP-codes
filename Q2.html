@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #4A4848;
+        }
+        .text{
+            color: #FFC83C;
+        }
+        .bg{
+            color:white;
+            
+        }
+        .form-control{
+            background: white;
+            margin: 5px 0 5px 0;
+        }
+        .btn{
+            background-color: white;
+            margin: 30px 0 30px 0;
+            padding: 7px 60px;
+        }
+        .nav{
+            color:aqua
+        }
+        .cpy{
+            color:bisque
+        }
+    </style>
+    
+</head>
+<body>
+    <center>
+        <article>
+            <h1 class="text"> Student Management System</h1>
+        </article>
+        <div class="login">
+            <div class="dashboard">
+                <p class="text">Sign up In To dashboard</p>
+            </div>
+            <div class="text">
+                Enter your details
+            </div>
+            <form class="bg">
+                <h2>Register</h2>
+                <p class="hint-text">Create your account</p>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                        <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                    </div>        	
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="pass" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="cpass" placeholder="Confirm Password" required="required">
+                </div>
+      
+                <div class="form-group">
+                    <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Register Now</button>
+                </div>
+                <div class="text-center">Already have an account? <a href="login.php">Sign in</a></div>
+            </form>
+        </center>
+            
+        </div>
+        <footer>
+            <nav>
+                <p class="nav"><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+            </nav>
+            <p class="cpy"> Copyright © 2014 Tutorial Republic</p>
+        </footer>
+
+        
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script>
+        function validateform(){  
+        var name=document.myform.emailid.value;  
+        var password=document.myform.password.value;  
+  
+        if (name==null || name==""){  
+         alert("Name can't be blank");  
+         return false;  
+        }else if(password.length<6){  
+         alert("Password must be at least 6 characters long.");  
+         return false;  
+  }  
+} 
+
+    </script>
+</head>
+<body>
+    <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <center>
+    <article>
+        <h1> Student Management System</h1>
+    </article>
+    <div class="login">
+        <div class="dashboard">
+            <p class="text">Login In To dashboard</p>
+        </div>
+        <div class="signup">
+            Enter your Email and password
+        </div>
+    </center>
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="emailid" placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="password">
+            </div>
+          </div>
+          <center>
+          <button type="submit" class="btn btn-primary btn-lg">Log in</button>
+        </center>
+    </div>
+    <footer>
+        <nav>
+            <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </nav>
+        <p>Copyright © 2014 Tutorial Republic</p>
+    </footer>
+    </form>
+</body>
+</html>
